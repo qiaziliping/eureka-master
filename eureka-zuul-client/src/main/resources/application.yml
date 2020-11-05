@@ -1,0 +1,28 @@
+server:
+  port: 5000    # 服务端口
+spring:
+  application:
+    name: sevice-zuul  # 服务名称
+  http:
+    encoding:
+      charset: UTF-8  # 声明编码格式
+      enabled: true   # 启动编码
+      force: true     # 强制编码
+eureka:
+  client:
+    service-url:
+      defualtZone: http://localhost:8761/eureka/
+
+zuul:
+  routes:
+    clientapi:        #  clientapi 是自定义，具体还是通过serviceId进行服务名称匹配
+      path: /clientapi/**
+      serviceId: eureka-client
+    ribbonapi:
+      path: /ribbonapi/**
+      serviceId: eureka-ribbon-client
+    feignapi:
+      path: /feignapi/**
+      serviceId: eureka-feign-client
+  prefix: /v1         # 指定版本号，如通过http://localhost:5000/v1/clientapi/getPort/zuul版本号测试
+

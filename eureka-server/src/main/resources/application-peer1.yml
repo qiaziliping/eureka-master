@@ -1,0 +1,17 @@
+server:
+  port: 8761
+
+
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    service-url:
+      defaultZone: http://peer2:8762/eureka/,http://peer3:8763/eureka/
+  server:
+    enable-self-preservation: false   # 关闭自我保护机制，正常情况不推荐使用，用于测试查看关闭其他服务时在注册列表中剔除
+spring:
+  application:
+    name: eureka-server
+
+

@@ -1,0 +1,12 @@
+server:
+  port: 8762   #eureka-client的程序端口
+
+eureka:
+  client:
+    service-url:
+#      DEFAULT_ZONE: http://peer1:8761/eureka/,http://peer2:8762/eureka/,http://peer3:8763/eureka/  # 服务注册地址
+      DEFAULT_ZONE: http://localhost:8761/eureka/  # 服务注册地址
+
+spring:
+  application:
+    name: eureka-client   # 程序名称

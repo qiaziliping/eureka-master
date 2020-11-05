@@ -1,0 +1,22 @@
+
+
+spring:
+  application:
+    name: eureka-ribbon-client
+
+server:
+  port: 8766
+
+eureka:
+  client:
+    service-url:
+      defualtZone: http://localhost:8761/eureka/
+
+#测试ribbon自己维护服务实例
+#ribbon:
+#  eureka:
+#    enabled: false  # false表示禁用调用eureka client 获取注册列表
+#service-qia:
+#  ribbon:
+##    listOfServers: baidu.com,google.com,localhost
+#    listOfServers: localhost:8762,localhost:8763
