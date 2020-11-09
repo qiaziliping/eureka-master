@@ -8,6 +8,8 @@
     <version>0.0.1-SNAPSHOT</version>
 
     <modules>
+        <module>eureka-server</module>
+        <module>eureka-client</module>
         <module>eureka-ribbon-client</module>
         <module>eureka-feign-client</module>
         <module>eureka-monitor-client</module>
