@@ -11,6 +11,7 @@ public class MyFeignConfig {
 
     /**
      * 注入该Bean，Feign在远程调用失败后会进行重试
+     * 配置重试间隔为100毫秒，最大重试时间为1秒，重试次数为5次
      */
     @Bean
     public Retryer feignRetryer() {

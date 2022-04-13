@@ -1,5 +1,5 @@
 server:
-  port: 8762   #eureka-client的程序端口
+  port: 8763   #eureka-client的程序端口
 
 eureka:
   client:

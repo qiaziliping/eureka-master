@@ -15,16 +15,14 @@
         <!--eureka依赖-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka</artifactId>
-            <version>1.4.3.RELEASE</version>
-            <!--<version>1.3.1.RELEASE</version>-->
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <!--<version>1.4.3.RELEASE</version>-->
         </dependency>
         <!--ribbon 负载均衡依赖-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-ribbon</artifactId>
-            <version>1.4.3.RELEASE</version>
-            <!--<version>1.3.1.RELEASE</version>-->
+            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+            <!--<version>1.4.3.RELEASE</version>-->
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -34,15 +32,13 @@
         <!--hystrix依赖-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-hystrix</artifactId>
-            <version>1.4.3.RELEASE</version>
-            <!--<version>1.3.1.RELEASE</version>-->
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+            <!--<version>1.4.3.RELEASE</version>-->
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
-            <version>1.4.3.RELEASE</version>
-            <!--<version>1.3.1.RELEASE</version>-->
+            <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
+            <!--<version>1.4.3.RELEASE</version>-->
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -50,7 +46,7 @@
         </dependency>
     </dependencies>
 
-    <!--<build>
+    <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -58,6 +54,6 @@
             </plugin>
         </plugins>
     </build>
--->
+
 
 </project>

@@ -3,6 +3,8 @@
 spring:
   application:
     name: eureka-feign-client  # 应用名称
+#  main:
+#    allow-bean-definition-overriding: true  # 设置可以定义重复的bean
 
 server:
   port: 8767      # 端口
@@ -15,3 +17,4 @@ eureka:
 feign:
   hystrix:
     enabled: true   # 文件中没有提示，不影响
+

@@ -15,8 +15,8 @@
         <!-- eureka-server起步依赖 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka-server</artifactId>
-            <version>1.4.3.RELEASE</version>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <!--<version>1.4.3.RELEASE</version>-->
         </dependency>
 
         <dependency>

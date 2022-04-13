@@ -49,8 +49,8 @@ public class RibbonController {
     public String testRibbon() {
         Map<String,Object> result = new HashMap<String,Object>();
 
-//        ServiceInstance instance = loadBalancerClient.choose("eureka-client-4");
-        ServiceInstance instance = loadBalancerClient.choose("service-qia");
+        ServiceInstance instance = loadBalancerClient.choose("eureka-client");
+//        ServiceInstance instance = loadBalancerClient.choose("service-qia");
 
         String host = instance.getHost();
         int port = instance.getPort();
@@ -73,8 +73,8 @@ public class RibbonController {
     @GetMapping("/getPort2/{name}")
     public String getPort2(@PathVariable String  name) {
 
-//        ServiceInstance instance = loadBalancerClient.choose("eureka-client-4");
-        ServiceInstance instance = loadBalancerClient.choose("service-qia");
+        ServiceInstance instance = loadBalancerClient.choose("eureka-client");
+//        ServiceInstance instance = loadBalancerClient.choose("service-qia");
         URI uri = instance.getUri();
 
         String result = restTemplate.getForObject(uri+"/getPort/"+name,String.class);

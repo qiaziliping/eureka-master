@@ -18,19 +18,19 @@ import org.springframework.web.client.RestTemplate;
 public class EurekaRibbonClientApplication {
 
 
-
-    @Bean
+    //方式1，通过@LoadBalanced注解
+    /*@Bean
     @LoadBalanced
     RestTemplate restTemplate() {
         return new RestTemplate();
-    }
+    }*/
 
-    /*
+    //方式2，通过LoadBalancerClient进行负载均衡
     @Bean
     RestTemplate restTemplate() {
         return new RestTemplate();
     }
-*/
+
 
     @Bean
     public ServletRegistrationBean getServlet() {

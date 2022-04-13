@@ -13,6 +13,7 @@ public class HiController {
 
     @GetMapping(value = "/getPort/{name}")
     public String helloPort(@PathVariable String name) {
+        int i = 1/0;
         return name+"-"+port;
     }
 }
